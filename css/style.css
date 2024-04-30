@@ -1,0 +1,206 @@
+body {
+  background-color: white; }
+
+.heroslider {
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  background-blend-mode: multiply;
+  min-height: 100vh;
+  background-position: top center;
+  background-size: cover;
+  width: 100vw;
+  object-fit: cover;
+  align-items: center !important;
+  display: flex !important; }
+  .heroslider h2 {
+    position: absolute;
+    top: 25%;
+    color: white;
+    font-size: 52px;
+    text-transform: capitalize;
+    line-height: 56px;
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; }
+  .heroslider .hero-btn {
+    position: absolute;
+    bottom: 25%; }
+  .heroslider .dark-btn {
+    width: 160px;
+    background-color: black;
+    border: none;
+    font-weight: 400;
+    font-family: "Roboto Serif", serif; }
+    .heroslider .dark-btn :active {
+      background-color: black; }
+  .heroslider .light-btn {
+    width: 160px;
+    background-color: white;
+    border: none;
+    font-weight: 400;
+    font-family: "Roboto Serif", serif; }
+    .heroslider .light-btn :active {
+      background-color: white; }
+
+.nav-sec {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+  .nav-sec .navbar-nav {
+    text-transform: uppercase !important;
+    font-family: "Roboto Serif", serif; }
+  .nav-sec .header-logo {
+    text-transform: uppercase !important;
+    font-family: "Roboto Serif", serif;
+    letter-spacing: 1px; }
+  .nav-sec .navbar-scrolled {
+    background-color: #00000087;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); }
+
+.testislide-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  z-index: 1;
+  padding: 35px 35px;
+  right: 0;
+  font-size: 14px; }
+  .testislide-bottom .testislide-pagination {
+    font-size: 10px;
+    bottom: inherit;
+    color: #fff; }
+    .testislide-bottom .testislide-pagination b {
+      font-size: 10px;
+      margin-top: -5px; }
+    .testislide-bottom .testislide-pagination span {
+      padding-left: 5px;
+      padding-right: 5px; }
+  .testislide-bottom .testislide-button-next,
+  .testislide-bottom .testislide-button-prev {
+    outline: none; }
+  .testislide-bottom .testislide-button-next::after,
+  .testislide-bottom .testislide-button-prev::after {
+    font-size: 10px !important;
+    color: #fff; }
+
+.owl-item {
+  color: white;
+  text-align: center; }
+
+.owl-prev {
+  float: left;
+  font-size: 32px !important;
+  text-transform: uppercase;
+  padding: 20px;
+  position: absolute;
+  left: 45%; }
+
+.owl-next {
+  float: right;
+  font-size: 32px !important;
+  text-transform: uppercase;
+  padding: 20px;
+  position: absolute;
+  right: 45%; }
+
+.owl-dots {
+  counter-reset: slides-num;
+  /* Initialize counter. */
+  position: absolute;
+  top: 100%;
+  left: 49%;
+  margin-top: 11px; }
+  .owl-dots:after {
+    content: counter(slides-num);
+    /* get total number of items - more info on http://www.sitepoint.com/a-little-known-way-to-replace-some-scripts-with-css-counters/ */
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    vertical-align: middle;
+    padding-left: 5px; }
+
+.owl-dot {
+  display: inline-block;
+  counter-increment: slides-num;
+  /* Increment counter */
+  margin-right: 5px; }
+  .owl-dot span {
+    display: none; }
+  .owl-dot.active:before {
+    content: counter(slides-num) "/  ";
+    /* Use the same counter to get current item. */
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.info {
+  text-align: center;
+  margin-top: 110px; }
+
+#overlay {
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */ }
+
+
+
+  
+.animeslide-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  z-index: 1;
+  padding: 35px 35px;
+  right: 0;
+  font-size: 14px; }
+  .animeslide-bottom .animeslide-pagination {
+    font-size: 10px;
+    bottom: inherit;
+    color: #fff; }
+    .animeslide-bottom .animeslide-pagination b {
+      font-size: 10px;
+      margin-top: -5px; }
+    .animeslide-bottom .animeslide-pagination span {
+      padding-left: 5px;
+      padding-right: 5px; }
+  .animeslide-bottom .animeslide-button-next,
+  .animeslide-bottom .animeslide-button-prev {
+    outline: none; }
+  .animeslide-bottom .animeslide-button-next::after,
+  .animeslide-bottom .animeslide-button-prev::after {
+    font-size: 10px !important;
+    color: #fff; }
+
+.animeslide .heroslider {
+  align-items: center !important;
+  display: flex !important; }
+
+.animeslide .swiper-button-prev {
+  left: 8% !important; }
+
+.animeslide .swiper-button-next {
+  right: 8% !important; }
+
+.animeslide .swiper-scrollbar.swiper-scrollbar-horizontal {
+  display: none !important; }
